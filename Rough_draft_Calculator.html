@@ -89,6 +89,58 @@
         let d = new Date();
         alert("Today's date is " + d);
     </script>
+    <script>import java.util.*;
+        import java.lang.Math;
+        
+        class Program {
+            private static Scanner input = new Scanner(System.in);
+        
+            public static void main(String[] args) {
+                int num1;
+                int num2;
+                double x;
+                int i;
+        
+                x = 0;
+                System.out.println("Please enter first number for your calculation.");
+                num1 = input.nextInt();
+                System.out.println("Please enter your second number for your calculation.");
+                num2 = input.nextInt();
+                System.out.println("For Addition enter 1. For Subtraction enter 2. For Multiplacation enter 3. For Division enter 4.");
+                i = input.nextInt();
+                if (i < 3) {
+                    if (i == 1) {
+                        x = num1 + num2;
+                    } else {
+                        x = num1 - num2;
+                    }
+                } else {
+                    if (i == 3) {
+                        x = num1 * num2;
+                    } else {
+                        if (num2 == 0) {
+                            System.out.println("Error: cannot Divide by Zero, Less the whole universe implodes!!!--->Please select a new number to divide by because we like the universe as it is.");
+                            num2 = input.nextInt();
+                        }
+                        if (num2 == 0) {
+                            System.out.println("Serriously we like the universe as it is. Please pick a different number.");
+                            num2 = input.nextInt();
+                        } else {
+                            x = (double) num1 / num2;
+                        }
+                        if (num2 == 0) {
+                            System.out.println("We tried sorry we cannot the calculation for you.");
+                            System.out.println("Have a Nice Day!");
+                        } else {
+                            x = (double) num1 / num2;
+                        }
+                    }
+                }
+                System.out.print("The answer to your calculation is ");
+                System.out.println(x);
+            }
+        }
+        </script>
   </head>
     <body>
         
