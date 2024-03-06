@@ -164,6 +164,56 @@
         
         </html> 
         </script>
+
+        <script>
+            <html>
+                function main() {
+    var num1;
+    var num2;
+    var x;
+    var i;
+
+    x = 0;
+    window.alert("Please enter first number for your calculation.");
+    num1 = Number(window.prompt('Enter a value for num1'));
+    window.alert("Please enter your second number for your calculation.");
+    num2 = Number(window.prompt('Enter a value for num2'));
+    window.alert("For Addition enter 1. For Subtraction enter 2. For Multiplacation enter 3. For Division enter 4.");
+    i = Number(window.prompt('Enter a value for i'));
+    if (i < 3) {
+        if (i == 1) {
+            x = num1 + num2;
+        } else {
+            x = num1 - num2;
+        }
+    } else {
+        if (i == 3) {
+            x = num1 * num2;
+        } else {
+            if (num2 == 0) {
+                window.alert("Error: cannot Divide by Zero, Less the whole universe implodes!!!--->Please select a new number to divide by because we like the universe as it is.");
+                num2 = Number(window.prompt('Enter a value for num2'));
+            }
+            if (num2 == 0) {
+                window.alert("Serriously we like the universe as it is. Please pick a different number.");
+                num2 = Number(window.prompt('Enter a value for num2'));
+            } else {
+                x = (double) num1 / num2;
+            }
+            if (num2 == 0) {
+                window.alert("We tried sorry we cannot the calculation for you.");
+                window.alert("Have a Nice Day!");
+            } else {
+                x = (double) num1 / num2;
+            }
+        }
+    }
+    window.alert("The answer to your calculation is ");
+    window.alert(x);
+}
+
+            </html>
+            </script>
     
   </head>
     <body>
