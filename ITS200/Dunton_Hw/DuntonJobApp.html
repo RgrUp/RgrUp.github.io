@@ -16,13 +16,17 @@
                     Employment / Job Application
                 </h1>
             </header>
-            <form method = "post" action = "index.html">
+            <!-- Start the Job Application Form and format to post to Campbell.edu-->
+            <form method = "post" action = "https://www.campbell.edu">
             <br>
+            <!-- Create a shaded box to wrap section heading text in. -->
             <div class="shaded-box" style = "background-color: rgb(131, 245, 245);
-            padding: 2px; border-radius: 20px ; text-align: center; height:fit-content">    
+            padding: 2px; border-radius: 20px ; text-align: center; height:fit-content">
+            
                 <h2>PERSONAL INFORMATION</h2> 
               </div>
             <br>
+            <!-- Start First section (PERSONAL INFORMATION) gathering personal identifying information -->
             <div style = "text-align: center;">
             <p>
                 <label>Date:
@@ -45,6 +49,8 @@
                     <input type = "text" placeholder="City" /> 
                  </label>
             </p>
+            <!-- create list of states in a drop down option. This code was sourced from
+              Google and ChatGpt to be efficient with time in inputing 50 options for the states -->
             <p>
                  <label for="state">Select your State:
 
@@ -107,6 +113,7 @@
                  </label>
             </p>
             <p>
+                <!-- insert a required tag for the email ensuring that an email is captured -->
                 <label>E-Mail:
                     <input type = "email" placeholder = "name@domain.com" 
                     required /> 
@@ -127,8 +134,8 @@
                  <label>Desired Pay:
                     <input type = "text" placeholder="$0.00" /> 
                  </label>
-                 <label><input type="checkbox" name="Pay_type" value="hourly"> Hourly</label>
-                 <label><input type="checkbox" name="Pay_type" value="salary"> Salary</label>
+                 <label><input type="radio" name="Pay_type" value="hourly"> Hourly</label>
+                 <label><input type="radio" name="Pay_type" value="salary"> Salary</label>
             </p>
             <p>
                 <label>Position Applied For:
@@ -141,27 +148,26 @@
                  <label><input type="checkbox" name="employment_type" value="Part-Time"> Part-Time</label>
                  <label><input type="checkbox" name="employment_type" value="Seasonal"> Seasonal</label>
             </p>
-            <p>
-                <label>Last Name:
-                    <input type = "text" placeholder="Last Name" /> 
-                 </label>
-            </p>
             </div>
             <br>
+            <!-- create next section (Eligible) and shaded box to wrap heading text in -->
             <div class="shaded-box" style = "background-color: rgb(131, 245, 245);
             padding: 2px; border-radius: 20px ; text-align: center; height:fit-content">    
                 <h2>Employment Eligibilty</h2> 
               </div>
+            <!-- Ask user for eligibility question for employment -->
             <div style = "text-align: center;">
+                <!-- used a radio button to make the selection logical as the options are one or the other -->
                     <label>Are You Legally Eligible To Work In The U.S.?
                     </label>
-                      <label><input type="checkbox" name="Eligibilty" value="Yes"> YES</label>
-                      <label><input type="checkbox" name="Eligibilty" value="No"> NO</label>
+                      <label><input type="radio" name="Eligibilty" value="Yes"> YES</label>
+                      <label><input type="radio" name="Eligibilty" value="No"> NO</label>
                 <p>
+                    <!-- used a radio button to make the selection logical as the options are one or the other -->
                     <label>Have You Ever Worked For This Employer?
                     </label>
-                      <label><input type="checkbox" name="former_employment" value="Yes"> YES</label>
-                      <label><input type="checkbox" name="former_employment" value="No"> NO</label>
+                      <label><input type="radio" name="former_employment" value="Yes"> YES</label>
+                      <label><input type="radio" name="former_employment" value="No"> NO</label>
                 </p>
                 <p>
                     <label>If Yes, Write The Start And End Dates:
@@ -169,10 +175,11 @@
                      </label>
                 </p>
                 <p>
+                    <!-- used a radio button to make the selection logical as the options are one or the other -->
                     <label>Have You Ever Been Convicted Of A Felony?
                     </label>
-                      <label><input type="checkbox" name="Felony-status" value="Yes"> YES</label>
-                      <label><input type="checkbox" name="Felony-status" value="No"> NO</label>
+                      <label><input type="radio" name="Felony-status" value="Yes"> YES</label>
+                      <label><input type="radio" name="Felony-status" value="No"> NO</label>
                 </p>
                 <p>
                     <label>If Yes, Please Explain:
@@ -181,6 +188,7 @@
                 </p>
             </div>
             <br>
+            <!-- Create next section (Education) with shaded box to wrap header text in -->
             <div class="shaded-box" style = "background-color: rgb(131, 245, 245);
             padding: 2px; border-radius: 20px ; text-align: center; height:fit-content">    
                 <h2>Education</h2> 
@@ -202,11 +210,12 @@
                         <input type = "datetime" placeholder="To" /> 
                     </label>
                 </p>
+                <!-- used a radio button to make the selection logical as the options are one or the other -->
                 <p>
                     <label>Graduate?
                     </label>
-                      <label><input type="checkbox" name="Graduate" value="Yes"> YES</label>
-                      <label><input type="checkbox" name="Graduate" value="No"> NO</label>
+                      <label><input type="radio" name="Graduate" value="Yes"> YES</label>
+                      <label><input type="radio" name="Graduate" value="No"> NO</label>
                 </p>
                 <p>
                     <label>College:
@@ -224,11 +233,12 @@
                         <input type = "datetime" placeholder="To" /> 
                     </label>
                 </p>
+                <!-- used a radio button to make the selection logical as the options are one or the other -->
                 <p>
                     <label>Graduate?
                     </label>
-                      <label><input type="checkbox" name="Graduate" value="Yes"> YES</label>
-                      <label><input type="checkbox" name="Graduate" value="No"> NO</label>
+                      <label><input type="radio" name="Graduate" value="Yes"> YES</label>
+                      <label><input type="radio" name="Graduate" value="No"> NO</label>
                 </p>
             </div>
                 <div style = "text-align: center;">
